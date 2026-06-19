@@ -21,8 +21,8 @@ if not api_key:
     st.stop()
 
 genai.configure(api_key=api_key)
-# Use the reliable 1.5-flash model
-model = genai.GenerativeModel('gemini-1.5-flash')
+# Use the reliable gemini-pro model
+model = genai.GenerativeModel('gemini-pro')
 ddgs = DDGS()
 
 def extract_text_from_pdf(uploaded_file):
